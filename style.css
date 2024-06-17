@@ -1,0 +1,95 @@
+
+.skill {
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-weight: bold;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  overflow-y: auto;
+  width: 230px;
+  padding: 20px;
+  background-color: #343a40;
+}
+
+.content-area {
+  margin-left: 206px;
+  padding-right: 0;
+}
+#text{
+  top: 35%;
+  left: 25%;
+}
+#text2{
+  top: 45%;
+  left: 17%;
+}
+
+
+.animated-text{
+font-size: 34px;
+font-weight: 600;
+min-width: 280px;
+}
+
+.animated-text span{
+position: relative;
+}
+
+.animated-text span::before{
+content: "Youtuber";
+color: #ff7f50;
+animation: words 20s infinite;
+}
+
+.animated-text span::after{
+content: "";
+position: absolute;
+width: calc(100% + 10px);
+height: 100%;
+background-color: #E6E6E6;
+border-left: 2px solid #ff7f50;
+right: -8px;
+animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+to{
+    border-left: 2px solid #ff7f5000;
+}
+}
+
+@keyframes words {
+0%,20%{
+    content: "Developer";
+}
+21%,40%{
+    content: "Designer";
+}
+41%,60%{
+    content: "Gamer";
+}
+61%,80%{
+    content: "Freelancer";
+}
+81%,100%{
+    content: "Fresher";
+}
+}
+
+@keyframes typing {
+10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+    width: 0;
+}
+5%,20%,25%,40%,45%,60%,65%,80%,85%{
+    width: calc(100% + 8px);
+}
+}
+
