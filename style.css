@@ -44,7 +44,7 @@ position: relative;
 }
 
 .animated-text span::before{
-content: "Youtuber";
+content: "Developer";
 color: #ff7f50;
 animation: words 20s infinite;
 }
@@ -54,9 +54,9 @@ content: "";
 position: absolute;
 width: calc(100% + 10px);
 height: 100%;
-background-color: #E6E6E6;
-border-left: 2px solid #ff7f50;
-right: -8px;
+/* background-color: #000000; */
+border-left: 4px solid #ff7f50;
+right: -1px;
 animation: cursor .8s infinite, typing 20s steps(14) infinite;
 }
 
@@ -78,7 +78,7 @@ to{
 }
 61%,80%{
     content: "Freelancer";
-}
+} 
 81%,100%{
     content: "Fresher";
 }
